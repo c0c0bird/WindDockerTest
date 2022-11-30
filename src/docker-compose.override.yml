@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+
+  rabbitmq:
+    ports:
+      - "15671:15671"
+      - "15672:15672"
+      - "5671:5671"
+      - "5672:5672"
+
+  servicea:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+      - EventBusConnection=rabbitmq
+      - EventBusUserName=guest
+      - EventBusPassword=guest
+    ports:
+      - "80"
+      - "443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      

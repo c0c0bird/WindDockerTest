@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>f3f8daad-7f94-4665-8491-0bfd063f1c99</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.1" />
+	<PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.2.1" />
+	<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0-preview.1" />
+	<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.2" />
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.31" />
+    <PackageReference Include="Serilog.AspNetCore" Version="4.1.1-dev-00229" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0-dev-00291" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj" />
+  </ItemGroup>
+
+</Project>

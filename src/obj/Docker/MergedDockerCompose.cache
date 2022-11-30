@@ -1,0 +1,70 @@
+name: dockercompose9596895637775258996
+services:
+  rabbitmq:
+    image: rabbitmq:3
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 15671
+      published: "15671"
+      protocol: tcp
+    - mode: ingress
+      target: 15672
+      published: "15672"
+      protocol: tcp
+    - mode: ingress
+      target: 5671
+      published: "5671"
+      protocol: tcp
+    - mode: ingress
+      target: 5672
+      published: "5672"
+      protocol: tcp
+  servicea:
+    build:
+      context: C:\Users\cjohn\source\repos\WindDockerTest\src
+      dockerfile: ServiceA/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      EventBusConnection: rabbitmq
+      EventBusPassword: guest
+      EventBusUserName: guest
+    image: servicea
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 80
+      published: "5000"
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      published: "5001"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\cjohn\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\cjohn\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose9596895637775258996_default

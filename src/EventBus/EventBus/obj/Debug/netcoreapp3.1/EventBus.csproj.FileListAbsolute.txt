@@ -1,0 +1,10 @@
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\bin\Debug\netcoreapp3.1\EventBus.deps.json
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\bin\Debug\netcoreapp3.1\EventBus.dll
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\bin\Debug\netcoreapp3.1\EventBus.pdb
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\obj\Debug\netcoreapp3.1\EventBus.csproj.AssemblyReference.cache
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\obj\Debug\netcoreapp3.1\EventBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\obj\Debug\netcoreapp3.1\EventBus.AssemblyInfoInputs.cache
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\obj\Debug\netcoreapp3.1\EventBus.AssemblyInfo.cs
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\obj\Debug\netcoreapp3.1\EventBus.csproj.CoreCompileInputs.cache
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\obj\Debug\netcoreapp3.1\EventBus.dll
+C:\Users\cjohn\source\repos\WindDockerTest\src\EventBus\EventBus\obj\Debug\netcoreapp3.1\EventBus.pdb
