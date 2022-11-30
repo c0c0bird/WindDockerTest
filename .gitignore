@@ -13,3 +13,5 @@
 /src/bin
 /src/ServiceA/obj
 /src/ServiceA/bin
+/src/ServiceA/ServiceA.log
+/src/.vs/InteractiveServices/v17/TestStore/0/001.testlog
