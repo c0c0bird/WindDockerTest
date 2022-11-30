@@ -1,0 +1,15 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+/src/.vs
+/src/EventBus/EventBus/obj
+/src/EventBus/EventBus/bin
+/src/EventBus/EventBus.Tests/obj
+/src/EventBus/EventBus.Tests/bin
+/src/EventBus/EventBusRabbitMQ/obj
+/src/EventBus/EventBusRabbitMQ/bin
+/src/obj
+/src/bin
+/src/ServiceA/obj
+/src/ServiceA/bin
